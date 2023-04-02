@@ -1,5 +1,5 @@
 <header class="main-header">
-  <nav class="navbar navbar-static-top">
+  <nav class="navbar navbar-static-top" style="background-color: #657d0ac5;">
     <div class="container">
       <div class="navbar-header">
         <a href="index.php" class="navbar-brand"><b>Ecommerce</b>Site</a>
@@ -7,9 +7,17 @@
           <i class="fa fa-bars"></i>
         </button>
       </div>
-
+      
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+      <div class="collapse navbar-collapse pull-left" id="navbar-collapse" >
+      <form method="POST" class="navbar-form navbar-left" action="search.php">
+          <div class="input-group" >
+              <input type="text" class="form-control" id="navbar-search-input" name="keyword" placeholder="Search for Product" required>
+              <span class="input-group-btn" id="searchBtn" style="display:none;">
+                  <button type="submit" class="btn btn-default btn-flat"><i class="fa fa-search"></i> </button>
+              </span>
+          </div>
+        </form>
         <ul class="nav navbar-nav">
           <li><a href="index.php">HOME</a></li>
           <li><a href="">ABOUT US</a></li>
@@ -39,14 +47,7 @@
             </ul>
           </li>
         </ul>
-        <form method="POST" class="navbar-form navbar-left" action="search.php">
-          <div class="input-group">
-              <input type="text" class="form-control" id="navbar-search-input" name="keyword" placeholder="Search for Product" required>
-              <span class="input-group-btn" id="searchBtn" style="display:none;">
-                  <button type="submit" class="btn btn-default btn-flat"><i class="fa fa-search"></i> </button>
-              </span>
-          </div>
-        </form>
+        
       </div>
       <!-- /.navbar-collapse -->
       <!-- Navbar Right Menu -->

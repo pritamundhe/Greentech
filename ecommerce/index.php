@@ -6,12 +6,12 @@
 	<?php include 'includes/navbar.php'; ?>
 	 
 	  <div class="content-wrapper">
-	    <div class="container">
+	    <div class="containr" style="margin:0";>
 
 	      <!-- Main content -->
 	      <section class="content">
 	        <div class="row">
-	        	<div class="col-sm-9">
+	        	<div class="col-sm-12">
 	        		<?php
 	        			if(isset($_SESSION['error'])){
 	        				echo "
